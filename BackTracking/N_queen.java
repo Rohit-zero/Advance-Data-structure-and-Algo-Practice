@@ -39,6 +39,14 @@ public class N_queen {
         }
         return true;
     }
+    
+    public void print_location(int[][] arr) {
+        for(int r=0; r<arr.length; r++)
+            for(int c=0; c<arr.length; c++)
+                if(arr[r][c]==1)
+                    System.out.println(r,c);
+    }
+    
     public static void main(String[] args) {
         int n=4;     // size of matrix
         int[][] arr=new int[n][n];
@@ -52,5 +60,6 @@ public class N_queen {
         }
         N_queen o = new N_queen();
         o.positions(arr,0,n);
+        o.print_location(arr);
     }
 }
