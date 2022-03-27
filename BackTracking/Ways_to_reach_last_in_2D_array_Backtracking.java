@@ -17,3 +17,9 @@ public class Ways_to_reach_last_in_2D_array_Backtracking {
         System.out.println(o.ways_to_reach_last_in_2D_array(3,3));
     }
 }
+
+// paths with resitriction or opsticals in maze
+
+public int ways_to_reach_with opsticals(int r, int c) {
+    
+}
